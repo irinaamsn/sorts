@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <ctime>
 using namespace std;
 #define N 8
 
@@ -6,6 +7,7 @@ int arr[N];
 
 void Rand()
 {
+    srand(time(NULL));
     for (int i = 0; i < N; i++)
     {
         arr[i] = rand() % 201 - 100;
